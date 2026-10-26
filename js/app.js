@@ -316,15 +316,6 @@ function doReject(id)  { rejectRequest(id);  renderAdmin(); }
 
 // ── ABOUT ──
 function renderAbout() {
-  const teamCards = TEAM.map(m => `
-    <div class="card" style="text-align:center">
-      <div style="font-size:2.5rem;margin-bottom:0.75rem">${m.avatar}</div>
-      <h3 style="margin-bottom:0.2rem">${esc(m.name)}</h3>
-      <div style="font-size:0.78rem;color:var(--accent);font-weight:500;margin-bottom:0.5rem;letter-spacing:0.04em;text-transform:uppercase">${esc(m.role)}</div>
-      <p style="font-size:0.83rem;margin-bottom:0.5rem">${esc(m.bio)}</p>
-      <a href="mailto:${esc(m.email)}" style="font-size:0.78rem;color:var(--muted);text-decoration:none">${esc(m.email)}</a>
-    </div>`).join('');
-
   main.innerHTML = `<div class="page"><div class="container" style="max-width:720px">
     <h2>About Scholar Space</h2>
     <p style="margin-bottom:2rem">A peer-to-peer academic resource sharing platform built for students, by students.</p>
@@ -337,7 +328,7 @@ function renderAbout() {
       <h3>How It Works</h3>
       <p>Register with your college email. Your batch year is automatically detected to assign your role. Seniors upload; juniors discover and download. Admins keep quality in check.</p>
     </div>
-    <div class="card" style="margin-bottom:2rem">
+    <div class="card" style="margin-bottom:1.5rem">
       <h3>Role System</h3>
       <div style="margin-top:0.75rem;display:flex;flex-direction:column;gap:0.6rem;font-size:0.875rem">
         <div><span class="tag tag-junior">Junior</span> &nbsp;1st year — can browse &amp; download resources.</div>
@@ -346,9 +337,9 @@ function renderAbout() {
       </div>
     </div>
 
-    <h2 style="margin-bottom:1.25rem">Meet the Team</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem">
-      ${teamCards}
+    <div class="card">
+      <h3>Developer</h3>
+      <p>Designed and developed by <strong>Utpalakshi</strong> as an independent web application for campus study resource sharing and collaboration.</p>
     </div>
   </div></div>`;
 }

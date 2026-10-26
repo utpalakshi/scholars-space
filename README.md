@@ -28,7 +28,6 @@ scholars-space/
 ├── js/
 │   ├── auth.js       # Authentication & automated role-detection logic
 │   ├── files.js      # Resource metadata and admin approval queue
-│   ├── team.js       # Team member data and credits
 │   └── app.js        # Core SPA router, page renderers, and event handlers
 ├── .gitignore        # Git ignore rules for editor and system files
 └── README.md         # Project documentation
@@ -61,11 +60,6 @@ Because Scholar Space is built with pure web standards (HTML5, CSS3, JavaScript)
 
 ---
 
-## 👥 Meet the Team
+## 👤 Author
 
-- **Madhuree** — *Frontend Developer* (Landing page & hero experience)
-- **Sandra** — *Database Engineer* (Data models & storage architecture)
-- **Pallakshi** — *UI Designer* (Visual identity & design system)
-- **Shreyash** — *QA & Tester* (Quality assurance & edge cases)
-- **Sisira** — *Frontend Developer* (Auth, admin, and utility pages)
-- **Chishti** — *Developer* (Application routing & module integration)
+- **Utpalakshi** — *Full-Stack Developer & Designer*
